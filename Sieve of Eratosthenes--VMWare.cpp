@@ -17,11 +17,11 @@ void prime_num(int N)
 	bool prime[N+1];
 	long long int p=2;
 	memset(prime,true,sizeof(prime));
-	for(p=2;p*p<N;p++)
+	for(p=2;p*p<=N;p++)
 	{
 		if(prime[p]==true)
 		{
-			for(int j=p*p;j<N;j+=p)
+			for(int j=p*p;j<=N;j+=p)
 			{
 				prime[j]=false;
 			}
