@@ -8,9 +8,9 @@ int main()
 	{
 		count=0;
 		cin>>N;
-		for(a=1;a<50;a++)
+		for(a=1;a<=cbrt(N);a++)
 		{
-			for(b=0;b<50;b++)
+			for(b=0;b<cbrt(N);b++)
 			{
 				if((pow(a,3)+pow(b,3))==N)
 				{
